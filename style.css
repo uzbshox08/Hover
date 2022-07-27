@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.card{
+    width: 600px;
+    height: 400px;
+    background-color: #ee82ee;
+    margin: auto;
+    margin-top: 6.1%;
+    background: url("./Annotation\ 2022-07-17\ 201854.png") no-repeat center;
+    position: relative;
+    overflow: hidden;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card::before{
+    content: "UZB'Sho'x";
+    position: absolute;
+    top: -100%;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #1e8fff6b;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+    z-index: 1;
+}
+
+.card:hover::before{
+    left: 50%;
+    top: 0;
+    transform: rotate(360deg);
+}
+.card::after{
+    content: "dghojiakbarsiu";
+    position: absolute;
+    top: 100%;
+    left: -50%;
+    width: 50%;
+    height: 100%;
+    background-color: #1e8fff6b;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .8s;
+    z-index: 1;
+}
+
+.card:hover::after {
+    left: 0;
+    top: 0;
+    transform: rotate(360deg);
+}
+.title{
+    color: #fff;
+    position: absolute;
+    top: -10%;
+    transition: 1s;
+    z-index: 2;
+}
+.card:hover .title{
+    top: 40%;
+}
